@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="wacc.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wacc</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <!-- capital structure -->
+          <h4>Capital structure</h4>
+          <input type="text" />
+          <input type="text" value="Amount" />
+          <input type="text" value="%" /><br />
+          <input type="text" value="Equity" />
+          <input type="text" id="amountEquity" value="2206000" />
+          <input type="text" id="percentageEquity" /><br />
+          <input type="text" value="Prefs" />
+          <input type="text" id="amountPrefs" value="750000" />
+          <input type="text" id="percentagePrefs" /><br />
+          <input type="text" value="Ltd" />
+          <input type="text" id="amountLtd" value="1500000" />
+          <input type="text" id="percentageLtd" /><br /><br>
+          <button class="btn btn-outline-dark btn-sm long" value="calculate1">Click</button><br><br>
+          <!-- Break points -->
+          <h4>Break Points</h4>
+          <input type="text" />
+          <input type="text" value="Max amount" />
+          <input type="text" value="Break point" /><br />
+          <input type="text" value="Equity" />
+          <input type="text" id="re" value="77.52" />
+          <input type="text" id="bpEquity" value="45" /><br />
+          <input type="text" value="Prefs" />
+          <input type="text" id="maxPrefs" value="55" />
+          <input type="text" id="bpPrefs" value="" /><br />
+          <input type="text" value="Ltd1" />
+          <input type="text" id="maxLtd1" value="45" />
+          <input type="text" id="bpLtd1" value="" /><br />
+          <input type="text" value="Ltd2" />
+          <input type="text" id="maxLtd2" value="55" />
+          <input type="text" id="bpLtd2" value="0" />
+          <br /><br>
+          <button class="btn btn-outline-dark btn-sm long" value="calculate2">Click</button><br><br>
+          <!-- components  -->
+          <h4>Equity</h4>
+          <input type="text" value="Price" />
+          <input type="text" value="Dividends paid" />
+          <input type="text" value="Growth" />
+          <input type="text" value="Flotation" /><br />
+          <input type="text" id="priceEquity" value="120" />
+          <input type="text" id="dividendsPaidEquity" value="2.5" />
+          <input type="text" id="growthEquity" value="0.075" />
+          <input type="text" id="flotationEquity" value="0.11" /><br /><br>
+          <button class="btn btn-outline-dark btn-sm">Equity1</button
+          ><input type="text" id="equity1" /><br /><br>
+          <button class="btn btn-outline-dark btn-sm">Equity2</button
+          ><input type="text" id="equity2" /><br /><br />
+          <h4>Preference shares</h4>
+          <input type="text" value="Price" />
+          <input type="text" value="Dividends paid" />
+          <input type="text" value="Flotation1" />
+          <input type="text" value="Flotation2" /><br />
+          <input type="text" id="pricePrefs" value="180" />
+          <input type="text" id="dividendsPaidPrefs" value="14.4" />
+          <input type="text" id="flotationPrefs1" value="0.09" />
+          <input type="text" id="flotationPrefs2" value="0.13" /><br /><br>
+          <button class="btn btn-outline-dark btn-sm">Prefs1</button
+          ><input type="text" id="prefs1" /><br /><br>
+          <button class="btn btn-outline-dark btn-sm">Prefs2</button
+          ><input type="text" id="prefs2" /><br /><br />
+          <h4>Ltd</h4>
+          <input type="text" value="Interest1" />
+          <input type="text" value="Interest2" />
+          <input type="text" value="Interest3" />
+          <input type="text" value="Tax rate" /><br />
+          <input type="text" id="int1" value="0.085" />
+          <input type="text" id="int2" value="0.11" />
+          <input type="text" id="int3" value="0.15" />
+          <input type="text" id="taxRate" value="0.2" /><br /><br>
+          <button class="btn btn-outline-dark btn-sm">ltd1</button
+          ><input type="text" id="ltd1" /><br /><br>
+          <button class="btn btn-outline-dark btn-sm">ltd2</button
+          ><input type="text" id="ltd2" /><br /><br>
+          <button class="btn btn-outline-dark btn-sm">ltd3</button
+          ><input type="text" id="ltd3" value="0" /><br /><br />
+        </div>
+        <div class="col-sm-6">
+          <h6>Enter break point</h6>
+          <input type="text" id="breakPoint" placeholder="110" /><br /><br />
+          <input type="text" />
+          <input type="text" value="Weight" />
+          <input type="text" value="Components" />
+          <input type="text" value="wacc" />
+          <br />
+          <input type="text" value="Equity" />
+          <input type="text" id="weightEquity" />
+          <input type="text" id="equityComp" />
+          <input type="text" id="wacc1" />
+          <br />
+
+          <input type="text" value="Prefs" />
+          <input type="text" id="weightPrefs" />
+          <input type="text" id="prefsComp" />
+          <input type="text" id="wacc2" />
+          <br />
+
+          <input type="text" value="Ltd" />
+          <input type="text" id="weightLtd" />
+          <input type="text" id="ltdComp" />
+          <input type="text" id="wacc3" />
+          <br />
+          <input type="text" />
+          <input type="text" />
+          <input type="text" value="WACC" />
+          <input type="text" id="totalWacc" />
+          <br /><br />
+          <button class="btn btn-outline-dark btn-sm long" value="calculate3">Click</button><br /><br />
+          <h4>Capital Structure</h4>
+          <input type="text" value="Equity">
+          <input type="text" value="Debt"><br>
+          <input type="text" id="capitalEquity">
+          <input type="text" id="capitalDebt"><br><br>
+          <button class="btn btn-outline-dark btn-sm long" value="capitalStructure">Click</button><br><br>
+          <input type="text" id="capitalEquityAnswer"> <input type="text" id="capitalDebtAnswer"><br><br>
+          <h4>Long term capital</h4>
+          <input type="text" value="Old issue"><input type="text" value="%"><input type="text"value="New issue"><br>
+          <input type="text" id="oldIssue"><input type="text" id="mojorCont"><input type="text" id="newIssue"><br><br>
+          <button class="btn btn-outline-dark btn-sm long">Answer</button><input type="text" id="moreInfo"><br><br>
+          <h4>RATIOS</h4>
+          <h5>Income statement</h5>
+          <input type="text" value="Sales">
+          <input type="text" value="Gross profit">
+          <input type="text" value="Operating profit">
+          <input type="text" value="Net profit">
+          <input type="text" value="Interest"><br>
+          <input type="text" id="sales">
+          <input type="text"  id="grossProfit">
+          <input type="text" id="operatingProfit">
+          <input type="text" id="netProfit">
+          <input type="text" id="interest"><br><br>
+          <h5>Balance sheet</h5>
+          <input type="text" value="current assests">
+          <input type="text" value="Inventory">
+          <input type="text" value="current liabilities">
+          <input type="text" value="total assests">
+          <input type="text" value="equity">
+          <br>
+          <input type="text" id="currentAssets">
+          <input type="text" id="inventory">
+          <input type="text" id="currentLiabilities">
+          <input type="text" id="totalAssets">
+          <input type="text" id="equity"><br><br>
+          <input type="text" value="longTermLoan"><br>
+          <input type="text" id="longTermLoan">
+          <br><br>
+          <button class="btn btn-outline-dark btn-sm long" value="grossProfit">Gross profit margin</button><input type="text" id="grossProfitMargin"><br><br>
+          <button class="btn btn-outline-dark btn-sm long" value="netProfitMargin">Net profit margin</button><input type="text" id="netProfitMargin"><br><br>
+          <button class="btn btn-outline-dark btn-sm long" value="operatingProfit">Operating profit margin</button><input type="text" id="operatingProfitMargin"><br><br>
+          <button class="btn btn-outline-dark btn-sm long" value="currentRatio">Current ratio</button><input type="text" id="currentRatio"><br><br>
+          <button class="btn btn-outline-dark btn-sm long" value="quickRatio">Quick ratio</button><input type="text" id="quickRatio"><br><br>
+          <button class="btn btn-outline-dark btn-sm long" value="returnOnEquity">Return on equity</button><input type="text" id="returnOnEquity"><br><br>
+          <button class="btn btn-outline-dark btn-sm long" value="debtRatio">Debt ratio</button><input type="text" id="debtRatio"><br><br>
+          <button class="btn btn-outline-dark btn-sm long" value="longTermDebtRatio">Long term debt ratio</button><input type="text" id="longTermDebtRatio"><br><br>
+          <button class="btn btn-outline-dark btn-sm long" value="interestCover">Interest cover</button><input type="text" id="interestCover"><br><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h4>RISK AND RETURN</h4>
+          <input type="text"value="Return" class="less"><input type="text" value="Exp value"  class="less"><input type="text" value="Std" class="less"><input type="text" value="StdSquared" class="less"><input type="text" value="Probalility" class="less" ><input type="text" value="Varience"  class="less"><br>
+          <input type="text" id="outcome1" class="less" /><input
+            type="text"
+            id="ev1" class="less"
+          /><input id="std1"  class="less"><input id="stdSquared1"  class="less"></input><input id="prob1" class="less" ></input><input type="text" id="var1" class="less"/><br />
+          <input type="text" id="outcome2"  class="less"/><input
+            type="text"
+            id="ev2"  class="less"
+          /><input id="std2"  class="less"><input id="stdSquared2"  class="less"><input type="text" id="prob2"  class="less"/></inpu><input id="var2"  class="less"></input><br />
+          <input type="text" id="outcome3" class="less" /></input><input
+            type="text"
+            id="ev3"  class="less"
+          /><input id="std3"  class="less"><input id="stdSquared3"  class="less"><input type="text" id="prob3"  class="less"/></inpu><input id="var3"  class="less"><br />
+          <input type="text" id="outcome4"  class="less" /></input><input
+            type="text"
+            id="ev4"  class="less"
+          /><input id="std4"  class="less"><input id="stdSquared4"  class="less"><input type="text" id="prob4"  class="less"/></inpu><input id="var4"  class="less"><br />
+          <input type="text"  class="less"><input type="text" class="less" ><input type="text"  class="less"><input class="less"><input type="text"  class="less"><input type="text" id="ansVar"  class="less"><br><br>
+          <button class="btn btn-outline-dark btn-sm long" value="STD">Standard Deviation</button><input type="text" id="ansStd"><br><br>
+          <button class="btn btn-outline-dark btn-sm long" value="CV">Coeffient of Variation</button><input type="text" id="ansCv">
+        </div>
+        <div class="col-sm-6">
+          <h4>Fixed loan interest</h4>
+          <input type="text" value="Fixed Loan">
+          <input type="text" value="Days">
+          <input type="text" value="Interest"><br>
+          <input type="text" id="loanFixed">
+          <input type="text" id="daysFixed" >
+          <input type="text" id="interestFixed"><br><br>
+          <button class="btn btn-outline-dark btn-sm long" value="interestFixedAnswer">Click</button><input type="text" id="interestFixedAnswer"><br><br>
+          <h4>Variable loan interest</h4>
+          <input type="text" value="Interest">
+          <input type="text" id="intOne" class="less">
+          <input type="text" id="intTwo" class="less">
+          <input type="text" id="intThree" class="less">
+          <input type="text" id="intFour" class="less">
+          <input type="text" id="intFive" class="less"><br>
+          <input type="text" value="Days">
+          <input type="text" id="daysOne" class="less">
+          <input type="text" id="daysTwo" class="less">
+          <input type="text" id="daysThree" class="less">
+          <input type="text" id="daysFour" class="less">
+          <input type="text" id="daysFive" class="less"><br><br>
+          <input type="text" value="VariableLoan"> <input type="text" class="unique" id="variableLoan"><br><br>
+          <button class="btn btn-outline-dark btn-sm long" value="interestVariableAnswer">Click</button><input type="text" id="interestVariableAnswer"><br><br>
+          <h4>Cost of giving up a discount</h4>
+          <input type="text" value="Discount">
+          <input type="text" value="Disc days">
+          <input type="text" value="Max days"><br>
+          <input type="text" id="discount">
+          <input type="text" id="discountDays">
+          <input type="text" id="maxDays"><br><br>
+          <button class="btn btn-outline-dark btn-sm long" value="costOfGivingUpADiscount">Cost</button><input type="text" id="costOfGivingUpADiscount"><br><br>
+         </div>
+      </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="wacc.js"></script>
+  </body>
+</html>
